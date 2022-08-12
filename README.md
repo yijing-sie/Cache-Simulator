@@ -2,10 +2,10 @@
 
 Intro to Computer Systems assignment :
 
-1. csim.c is a small C program that simulates the behavior of a hardware cache memory
+1. [csim.c](csim.c) is a small C program that simulates the behavior of a hardware cache memory
 
 
->  Given a series of memory operations, csim.c that simulates the behavior of a cache with arbitrary size and associativity. 
+>  Given a series of memory operations, [csim.c](csim.c) that simulates the behavior of a cache with arbitrary size and associativity. 
 
 
 
