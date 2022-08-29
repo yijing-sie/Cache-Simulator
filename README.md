@@ -23,7 +23,7 @@ Usage: ./csim -s <s> -E <E> -b <b> -t <tracefile>
 -b <b>: Number of block bits (B = 2b is the block size) 
 -t <tracefile>: Name of the memory trace to replay
 ```
-
+(The command-line arguments are based on the notation (s, E, and b) from page 617 of the CS:APP3e textbook.)
 > The output includes the total number of hits, misses, evictions, the number of dirty bytes that have been evicted and the number of dirty bytes in the cache at the end of the simulation.
 
 For example:
