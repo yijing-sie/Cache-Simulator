@@ -11,7 +11,7 @@ Intro to Computer Systems assignment :
 
 *  It uses the LRU (least-recently used) replacement policy and a write-back, write-allocate policy.
 
-* All the smaple trace files can be found in [traces](traces)
+* All the smaple trace files can be found in [traces/csim](traces/csim)
 
 
 > Usage:
