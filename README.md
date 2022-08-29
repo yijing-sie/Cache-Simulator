@@ -5,11 +5,13 @@ Intro to Computer Systems assignment :
 1. [csim.c](csim.c) is a small C program that simulates the behavior of a hardware cache memory
 
 
->  Given a series of memory operations, [csim.c](csim.c) that simulates the behavior of a cache with arbitrary size and associativity. 
+*  Given a series of memory operations, [csim.c](csim.c) simulates the behavior of a cache with arbitrary size and associativity. 
 
 
 
->  It uses the LRU (least-recently used) replacement policy and a write-back, write-allocate policy.
+*  It uses the LRU (least-recently used) replacement policy and a write-back, write-allocate policy.
+
+* All the smaple trace files can be found in [traces](traces)
 
 
 > Usage:
@@ -22,6 +24,10 @@ Usage: ./csim -s <s> -E <E> -b <b> -t <tracefile>
 -E <E>: Associativity (number of lines per set) 
 -b <b>: Number of block bits (B = 2b is the block size) 
 -t <tracefile>: Name of the memory trace to replay
+
+
+For example:
+./csim -s 0 -E 1 -b 0 -t traces/csim/wide.trace
 ```
 (The command-line arguments are based on the notation (s, E, and b) from page 617 of the CS:APP3e textbook.)
 > The output includes the total number of hits, misses, evictions, the number of dirty bytes that have been evicted and the number of dirty bytes in the cache at the end of the simulation.
