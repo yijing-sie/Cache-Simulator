@@ -1,5 +1,5 @@
 # Cache-Simulator
-Intro to Computer Systems assignment. This assignment was built and (supposed to) run in **Linux**.  :
+Intro to Computer Systems assignment. This assignment was built and (supposed to) run in **Linux**  :
 
 1. [csim.c](csim.c) is a small C program that simulates the behavior of a hardware cache memory
 
