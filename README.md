@@ -40,7 +40,7 @@ hits:4 misses:5 evictions:3 dirty_bytes_in_cache:32 dirty_bytes_evicted:16
 ---
 2. [trans.c](trans.c) optimizes a matrix transpose function, with the goal of minimizing the number of cache misses and minimizes the number of clock cycles under several restrictions
 
-* [trans.c](trans.c) computes the transpose of `N`×`M` matrix `A` and store the results in `M`×`N` matrix `B`, where `tmp` is a pointer to an array of 256 elements that can be used to hold data as an intermediate step between reading from `A` and writing to `B`.
+* It computes the transpose of `N`×`M` matrix `A` and store the results in `M`×`N` matrix `B`, where `tmp` is a pointer to an array of 256 elements that can be used to hold data as an intermediate step between reading from `A` and writing to `B`.
 
 
 
