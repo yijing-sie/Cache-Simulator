@@ -10,7 +10,7 @@ Intro to Computer Systems assignment. This assignment was built and (supposed to
 
 *  It uses the LRU (least-recently used) replacement policy and a write-back, write-allocate policy.
 
-* All the smaple trace files can be found in [traces/csim](traces/csim) for testing the [csim.c](csim.c)
+* All the sample trace files can be found in [traces/csim](traces/csim) for testing the [csim.c](csim.c)
 
 
 ### Usage:
@@ -30,7 +30,7 @@ For example:
 ```
 (The command-line arguments are based on the notation (s, E, and b) from page 617 of the CS:APP3e textbook.)
 
-* The output includes the total number of hits, misses, evictions, the number of dirty bytes that have been evicted and the number of dirty bytes in the cache at the end of the simulation.
+* The output includes the total number of hits, misses, evictions, the number of dirty bytes that have been evicted, and the number of dirty bytes in the cache at the end of the simulation.
 
 For example:
 
@@ -51,7 +51,7 @@ The full points are 60 for this test!
 ---
 2. [trans.c](trans.c) optimizes a `transpose_submit`, a matrix transpose function, with the goal of minimizing the number of cache misses and minimizes the number of clock cycles under several restrictions
 
-* `transpose_submit` computes the transpose of `N`×`M` matrix `A` and store the results in `M`×`N` matrix `B`, where `tmp` is a pointer to an array of 256 elements that can be used to hold data as an intermediate step between reading from `A` and writing to `B`.
+* `transpose_submit` computes the transpose of `N`×`M` matrix `A` and stores the results in `M`×`N` matrix `B`, where `tmp` is a pointer to an array of 256 elements that can be used to hold data as an intermediate step between reading from `A` and writing to `B`.
 
 
 
@@ -73,7 +73,7 @@ using **LLVM-based** instrumentation to extract the address trace, and then usin
 Using the reference cache simulator, **a cache miss is worth 100 clock cycles, while a cache hit is worth 4 clock cycles**.
 
 
-`transpose_submit` has to get no more than 36,000 clocle cycles for **32 x 32** matrix to get the full points. Here's the report for my `transpose_function`:
+`transpose_submit` has to get no more than 36,000 clock cycles for **32 x 32** matrices to get the full points. Here's the report for my `transpose_function`:
 
 
 ![image](https://user-images.githubusercontent.com/84282744/187273418-a073490f-9923-4612-9a4a-36150812deea.png)
@@ -81,7 +81,7 @@ Using the reference cache simulator, **a cache miss is worth 100 clock cycles, w
 
 For the **1024 x 1024** matrix, `transpose_function` will be evaluated on on the Haswell L1 cache with cache parameters ```s = 6, E = 8, b = 6```.  
 
-`transpose_submit` has to get no more than 35,100,000 clocle cycles for **1024 x 1204** matrix to get the full points. Here's the report for my `transpose_function`:
+`transpose_submit` has to get no more than 35,100,000 clock cycles for **1024 x 1204** matrix to get the full points. Here's the report for my `transpose_function`:
 
 
 ![image](https://user-images.githubusercontent.com/84282744/187274550-27b964e1-c6d9-4f63-b8f2-be89e0199ea7.png)
